@@ -1,0 +1,15 @@
+{
+  "brands": [{"img": "../../img/dg.png",
+    "id": 1, "name": "dg"
+  },{"img": "./img/v.png",
+    "id": 2, "name": "v"
+  },{"img": "./img/ck.png",
+    "id": 3, "name": "ck"
+  },{"img": "./img/gucci.png",
+    "id": 4, "name": "gucci"
+  },{"img": "./img/prada.png",
+    "id": 5, "name": "prada"
+  },{"img": "./img/versache.png",
+    "id": 6, "name": "versache"
+  }]
+}
