@@ -18,7 +18,7 @@ export const information:Footer[] =[
     },
     {
         link:'/store/category/liquid',
-        title:'footware',
+        title:'liquid',
         id: 5
     },
 ]

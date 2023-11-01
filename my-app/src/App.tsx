@@ -9,9 +9,9 @@ import Footer from './components/footer/Footer';
 import Contact from "./components/contact/Contact";
 import Category from "./components/category/Category";
 import Accessories from "./components/category/accessories/Accessories";
-import Outware from "./components/category/liquid/liquid";
 import Home from "./pages/home/Home";
 import Vapes from './components/category/Vapes/Vapes';
+import Liquid from './components/category/liquid/liquid';
 
 const App = ():JSX.Element  =>{
   return (
@@ -28,7 +28,7 @@ const App = ():JSX.Element  =>{
           <Route path="/contacts" element={<Contact />} />
           <Route path="/store/category/accessories" element={<Accessories />} />
           <Route path="/store/category/Vapes" element={<Vapes />} />
-          <Route path="/store/category/outware" element={<Outware />} />
+          <Route path="/store/category/liquid" element={<Liquid />} />
           {/*<Route path="/blog" element={<Products />} />*/}
           {/*<Route path="/blog" element={<Products />} />*/}
         </Routes>
