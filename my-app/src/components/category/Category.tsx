@@ -16,38 +16,13 @@ const categories: Categories[] = [
         id: uuidv4()
     },
     {
-        name:'outdoor',
-        categoryLink:'/store/category/outdoor',
+        name:'Vapes',
+        categoryLink:'/store/category/Vapes',
         id: uuidv4()
     },
     {
-        name:'mens',
-        categoryLink:'/store/category/mens',
-        id: uuidv4()
-    },
-    {
-        name:'footware',
-        categoryLink:'/store/category/footware',
-        id: uuidv4()
-    },
-    {
-        name:'womans',
-        categoryLink:'/store/category/womans',
-        id: uuidv4()
-    },
-    {
-        name:'outware',
-        categoryLink:'/store/category/outware',
-        id: uuidv4()
-    },
-    {
-        name:'jewelry',
-        categoryLink:'/store/category/jewelry',
-        id: uuidv4()
-    },
-    {
-        name:'sportsware',
-        categoryLink:'/store/category/sportsware',
+        name:'liquid',
+        categoryLink:'/store/category/liquid',
         id: uuidv4()
     }
 

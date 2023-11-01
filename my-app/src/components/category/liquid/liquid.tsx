@@ -1,7 +1,7 @@
-const Outware = () =>{
+const Liquid = () =>{
     return(
         <div>Outware</div>
     )
 }
 
-export default  Outware;
+export default  Liquid;

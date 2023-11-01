@@ -12,30 +12,15 @@ export const information:Footer[] =[
         id: 1
     },
     {
-        link: '/store/category/outdoor',
-        title:'outdoor',
-        id: 2
-    },
-    {
-        link: '/store/category/mens',
-        title:'mens',
-        id: 3
-    },
-    {
-        link:'/store/category/womans',
-        title:'womans',
+        link:'/store/category/Vapes',
+        title:'Vapes',
         id: 4
     },
     {
-        link:'/store/category/footware',
+        link:'/store/category/liquid',
         title:'footware',
         id: 5
     },
-    {
-        link:'/store/category/outware',
-        title:'outware',
-        id: 6
-    }
 ]
 
 export const pages:Footer[] =[
