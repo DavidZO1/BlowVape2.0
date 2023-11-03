@@ -13,7 +13,7 @@ const PopularProducts = () => {
 
   useEffect(() => {
     // Fetch popular products from your Flask backend
-    fetch('172.0.0.1:5000/products') // Puedes ajustar la URL según tu configuración
+    fetch('/products') // Puedes ajustar la URL según tu configuración
       .then((response) => response.json())
       .then((data) => setPopularProducts(data))
       .catch((error) => console.error('Error fetching popular products:', error));
