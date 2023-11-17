@@ -56,6 +56,41 @@ def get_products():
     product_list = [{'id': product[0], 'name': product[1], 'description': product[2], 'price': product[3], 'image_url': product[4]} for product in products]
     return jsonify(product_list)
 
+@app.route('/register', methods=['POST'])
+def register():
+    data = request.get_json()
+
+    first_name = data.get('firstName')
+    last_name = data.get('lastName')
+    email = data.get('registerEmail')
+    password = data.get('registerPassword')
+
+    cursor = mysql.connection.cursor()
+    cursor.execute('INSERT INTO login (first_name, last_name, email, password) VALUES (%s, %s, %s, %s)',
+                   (first_name, last_name, email, password))
+    mysql.connection.commit()
+    cursor.close()
+
+    return jsonify({'message': 'Usuario registrado correctamente'})
+
+# Ruta para el login de usuarios
+@app.route('/login', methods=['POST'])
+def login():
+    data = request.get_json()
+
+    email = data.get('loginEmail')
+    password = data.get('loginPassword')
+
+    cursor = mysql.connection.cursor()
+    cursor.execute('SELECT * FROM login WHERE email = %s', (email,))
+    user = cursor.fetchone()
+    cursor.close()
+
+    if user and user[1] == password:  # Suponiendo que el índice 3 es la columna de contraseñas
+        return jsonify({'message': 'Inicio de sesión exitoso'})
+    else:
+        return jsonify({'message': 'Credenciales incorrectas'}), 401
+
 if __name__ == '__main__':
     app.run(debug=True)
 
