@@ -10,16 +10,16 @@ const Hero = ():JSX.Element =>{
                 <div className="new">
                     <h1>Sale</h1>
                     <h3>GET UP TO 25% OFF</h3>
-                    <button onClick={() => navigate('/accessories')}>shop now</button>
+                    <button onClick={() => navigate('/accessor')}>shop now</button>
                 </div>
                 <div className="collection">
                     <div className="collection-item" id='women'>
                         <h5>New arrivals</h5>
-                        <h3>women's</h3>
+                        
                     </div>
                     <div className="collection-item" id='men'>
                         <h5>New arrivals</h5>
-                        <h3>men's</h3>
+                        
                     </div>
                 </div>
             </div>
