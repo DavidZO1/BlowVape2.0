@@ -7,7 +7,7 @@ const Vapes = () => {
       </p>
       <div className="vapes-list">
         <div className="vape-item">
-          <img src="vape1.jpg"/>
+          <img src="./vape1.jpg"/>
           <h2>Vape Modelo 1</h2>
           <p>Precio: $49.99</p>
           <button className="add-to-cart-button">Añadir al carrito</button>

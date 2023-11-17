@@ -10,7 +10,7 @@ const Hero = ():JSX.Element =>{
                 <div className="new">
                     <h1>Sale</h1>
                     <h3>GET UP TO 25% OFF</h3>
-                    <button onClick={() => navigate('/accessor')}>shop now</button>
+                    <button onClick={() => navigate('/accessories')}>shop now</button>
                 </div>
                 <div className="collection">
                     <div className="collection-item" id='women'>
@@ -34,7 +34,7 @@ const Hero = ():JSX.Element =>{
                 </div>
                 <div className="footwear">
                     <p>new arrivals</p>
-                    <h1>footwear</h1>
+                    
                 </div>
             </div>
         </div>

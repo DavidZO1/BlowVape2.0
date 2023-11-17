@@ -10,7 +10,7 @@ const Navbar = (): JSX.Element => {
   return (
     <div className='navbar'>
       <div className="logo">
-        <h1 onClick={() => navigate('/')}>Styler</h1>
+        <h1 onClick={() => navigate('/')}>Blow Vape</h1>
       </div>
       <div className="nav-links">
           {
